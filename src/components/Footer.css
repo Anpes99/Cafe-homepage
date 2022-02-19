@@ -1,0 +1,23 @@
+.footer__btn {
+  cursor: pointer;
+  display: inline-block;
+}
+
+.footer__btn::after {
+  content: " ";
+  width: 100%;
+  height: 0.1rem;
+  background-color: rgb(243 244 246);
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  transition: all 0.45s;
+  transform: translate(0, -0.4rem);
+
+  opacity: 0;
+}
+
+.footer__btn:hover::after {
+  transform: translate(0, -1.1rem);
+  opacity: 1;
+}
