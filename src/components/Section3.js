@@ -61,7 +61,7 @@ const Section3 = () => {
           </a>
         </div>
         <div
-          className={`sliding-box  h-[30rem] border-white border-2 w-[30rem] ${
+          className={`sliding-box  h-[30rem] border-white border-2 w-[30rem] cursor-pointer ${
             boxesInView
               ? "opacity-100 -translate-x-[0.06225rem] "
               : "translate-x-[100rem] opacity-0"

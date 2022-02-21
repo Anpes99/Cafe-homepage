@@ -1,14 +1,18 @@
 import "./Section2.css";
 import coffeeMeasure from "../images/coffee-measure.jpg";
 import { useEffect, useRef, useState } from "react";
-import { getTranslateY, isElementInViewport } from "../utils/utils";
+import {
+  getTranslateY,
+  isElementInViewport,
+  isElementPartlyInViewport,
+} from "../utils/utils";
 
 const Section2 = ({ bodyRef }) => {
   const [lastPageYOffset, setLastPageYOffset] = useState();
   const [movingText1TranslateY, setMovingText1TranslateY] = useState(100);
   // const [keepCentered, setKeepCentered] = useState(false);
 
-  useEffect(() => {
+  /*   useEffect(() => {
     const movingtext1 = document.querySelector("#section2-movingtext1");
     const movingtext2 = document.querySelector("#section2-movingtext2");
     const movingtext3 = document.querySelector("#section2-movingtext3");
@@ -17,33 +21,33 @@ const Section2 = ({ bodyRef }) => {
     const movingtext6 = document.querySelector("#section2-movingtext6");
     const section2 = document.querySelector("#section2");
 
-    if (isElementInViewport(movingtext1)) {
+    if (isElementPartlyInViewport(movingtext1)) {
       movingtext1.style.transform = "translateY(0)";
       movingtext1.style.opacity = "1";
     }
-    if (isElementInViewport(movingtext2)) {
+    if (isElementPartlyInViewport(movingtext2)) {
       movingtext2.style.transform = "translateY(0)";
       movingtext2.style.opacity = "1";
     }
 
-    if (isElementInViewport(movingtext3)) {
+    if (isElementPartlyInViewport(movingtext3)) {
       movingtext3.style.transform = "translateY(0)";
       movingtext3.style.opacity = "1";
     }
 
-    if (isElementInViewport(movingtext4)) {
+    if (isElementPartlyInViewport(movingtext4)) {
       movingtext4.style.transform = "translateY(0)";
       movingtext4.style.opacity = "1";
     }
-    if (isElementInViewport(movingtext5)) {
+    if (isElementPartlyInViewport(movingtext5)) {
       movingtext5.style.transform = "translateY(0)";
       movingtext5.style.opacity = "1";
     }
-    if (isElementInViewport(movingtext6)) {
+    if (isElementPartlyInViewport(movingtext6)) {
       movingtext6.style.transform = "translateY(0)";
       movingtext6.style.opacity = "1";
     }
-  }, []);
+  }, []); */
 
   document.addEventListener("scroll", (event) => {
     setLastPageYOffset(window.pageYOffset);

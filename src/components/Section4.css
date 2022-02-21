@@ -3,6 +3,7 @@
   background-size: contain;
   background-repeat: no-repeat;
   position: relative;
+  transition: all 0.7s;
 }
 .section4-img1::after {
   content: " ";
@@ -26,6 +27,7 @@
   background-image: url(../images/bakery.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: all 1s;
   position: relative;
 }
 .section4-img2::after {
@@ -50,6 +52,7 @@
   background-image: url(../images/takeout.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  transition: all 1.3s;
   position: relative;
 }
 .section4-img3::after {
