@@ -1,3 +1,3 @@
 # Homepage for a cafe.
 
-## https://cafeshop1000.herokuapp.com/
+## https://main--stellular-sunflower-fe6785.netlify.app/
