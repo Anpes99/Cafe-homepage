@@ -12,7 +12,9 @@ const Section3 = () => {
         document.querySelector("#section3-sliding-boxes")
       )
     ) {
-      setBoxesInView(true);
+      if (!boxesInView) {
+        setBoxesInView(true);
+      }
     }
   });
 
@@ -22,9 +24,10 @@ const Section3 = () => {
         document.querySelector("#section3-sliding-boxes")
       )
     ) {
-      console.log(boxesInView);
-      setBoxesInView(true);
-    } else {
+      if (!boxesInView) {
+        setBoxesInView(true);
+      }
+    } else if (boxesInView) {
       setBoxesInView(false);
     }
   });
