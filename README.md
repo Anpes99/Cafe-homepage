@@ -1,3 +1,3 @@
 # Homepage for a cafe.
 
-## https://cafeshophomepage.netlify.app/
+## https://cafe-homepage12345.netlify.app/
